@@ -19,4 +19,4 @@ class ConvolutionalNeuralNetwork:
         return history.history
 
     def evaluate(self, X_test, y_test):
-        return self.model.evaluate(X_test / 255, y_test)
+        return self.network.evaluate(X_test / 255, y_test)
